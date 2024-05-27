@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h2,h4 {
+    letter-spacing: normal;
+    margin-bottom: 0.75rem;
+    line-height: 1.25;
+}
+
+h4 {
+    font-size:large;
+}
+
+nav {
+    background-color: #F1B8B3;
+    height: 3rem;
+    display: grid;
+    align-items: center;
+}
+
+.centro-nav {
+    width: 90%;
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.centro-nav h4 {
+    margin-bottom: 0;
+    color: #1B198F;
+}
+
+.links-nav {
+    display: flex; 
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1B198F;
+    letter-spacing:normal;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    color:#C3B3F1;
+}
+
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Para ocupar a altura total da janela de visualização */
+    margin: 0; /* Para remover margens padrão do body */
+}
+
+.container {
+    text-align: center;
+}
+
+.container h2 {
+    background:  #F1B8B3;;
+    padding: 1rem;
+    border-radius: 100px;
+    margin-bottom: 2.5rem;
+    color: #1B198F;
+}
+
+  .corAtual {
+    color: aliceblue;
+}
+
+.botao {
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--clr-black);
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    border-radius: 100px; /* Manter o border-radius original */
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--clr-black);
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+/* Sobrescreve as propriedades do botão */
+.botao {
+    color: #1B198F;
+    background-color: #F1B8B3;
+    cursor: pointer;
+    font-weight: 700;
+}
