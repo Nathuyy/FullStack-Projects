@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura!</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="conteiner-entrada">
+            <form>
+                <label for="entrada">Unidade da sua temperatura:</label>
+                <select id="entrada" name="unidadeEntrada" required>
+                    <option value="" selected disabled>Selecione uma unidade</option>
+                    <option value="Celsius">Graus Celsius</option>
+                    <option value="Kelvin">Graus Kelvin</option>
+                    <option value="Fahrenheit">Graus Fahrenheit</option>
+                </select><br><br>
+                <div class="saida">
+                <label for="saida">Unidade convertida</label>
+                <select id="saida" name="unidadeSaida" required>
+                    <option value="" selected disabled>Selecione uma unidade</option>
+                    <option value="Celsius">Graus Celsius</option>
+                    <option value="Kelvin">Graus Kelvin</option>
+                    <option value="Fahrenheit">Graus Fahrenheit</option>
+                </select>
+                <br><br>
+                <label for="valor">Temperatura:</label>
+                <input type="number" id="valor" name="valor" required>
+                <br><br>
+            </div>
+                <button type="button" id="converter">Converter</button>
+                <p id="resultado"></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
